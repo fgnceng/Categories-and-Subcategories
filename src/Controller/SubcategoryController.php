@@ -15,7 +15,7 @@ class SubcategoryController extends AbstractController
     public function index()
     {
         $post=new Post();
-        $form=$this->createForm(PosttType::class,$post);
+        $form=$this->createForm(PostType::class,$post);
         return $this->render('subcategory/index.html.twig', [
              'post'=>$post,
             'form'=>$form->createView(),
